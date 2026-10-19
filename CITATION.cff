@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "ISW2 — Android"
+abstract: "Android classroom companion app for the Software Engineering II course at Universidad Nacional de Colombia, with attendance, live polls, quizzes, grades and team boards."
+authors:
+  - given-names: "Sergio"
+    family-names: "Vargas"
+    affiliation: "Universidad Nacional de Colombia"
+version: "1.0.9"
+date-released: "2026-10-18"
+license: MIT
+repository-code: "https://github.com/OldHus/isw2-android"
+url: "https://ingesoftun4l.com"
+keywords:
+  - android
+  - kotlin
+  - jetpack-compose
+  - firebase
+  - education
