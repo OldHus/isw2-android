@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Logo de la pantalla de arranque: solo la "U" blanca, centrada.
+  Lienzo de 288dp; la "U" cabe dentro del círculo visible de 192dp.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="288"
+    android:viewportHeight="288">
+
+    <!-- Coordenadas del ícono original (1254 px), escaladas y centradas -->
+    <group
+        android:translateX="23.7"
+        android:translateY="22.7"
+        android:scaleX="0.192"
+        android:scaleY="0.192">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M365,346 L525,346 L525,660 C525,725 570,775 627,775 C685,775 728,725 728,660 L728,346 L888,346 L888,680 C888,830 790,918 627,918 C480,918 380,840 365,712 C375,722 385,730 398,737 L568,832 C565,810 545,790 520,774 L398,693 C380,682 365,665 365,640 Z" />
+    </group>
+</vector>

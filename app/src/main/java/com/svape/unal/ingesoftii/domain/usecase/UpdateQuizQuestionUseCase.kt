@@ -1,0 +1,19 @@
+package com.svape.unal.ingesoftii.domain.usecase
+
+import com.svape.unal.ingesoftii.domain.model.QuizError
+import com.svape.unal.ingesoftii.domain.repository.QuizRepository
+
+class UpdateQuizQuestionUseCase(private val repository: QuizRepository) {
+    suspend operator fun invoke(
+        courseId: String,
+        questionId: String,
+        text: String,
+        options: List<String>,
+        correctOptionIndex: Int
+    ): Result<Unit> {
+        if (text.isBlank()) return Result.failure(QuizError.EmptyQuestionText)
+        if (options.count { it.isNotBlank() } < 2) return Result.failure(QuizError.NotEnoughOptions)
+        if (correctOptionIndex !in options.indices) return Result.failure(QuizError.InvalidCorrectOption)
+        return repository.updateQuestion(courseId, questionId, text, options, correctOptionIndex)
+    }
+}
